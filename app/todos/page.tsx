@@ -7,7 +7,7 @@ export default async function Todos() {
     return (
         <div>
             <h1>Todos</h1>
-            <ul>
+            <ul style={{paddingInline: "50px", listStyleType: "suare" }}>
                 {todos.map(todo => (
                     <li key={todo.id}>
                         <p>{todo.title}</p>
