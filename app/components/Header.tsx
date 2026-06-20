@@ -9,7 +9,7 @@ import Link from "next/link"
                 <ul className={css.navList}>
                     <li className={css.link}><Link href="/">Hoom</Link></li>
                     <li className={css.link}><Link href="abaut">Abaut</Link></li>
-                    <li className={css.link}><Link href="gerga">Gerga</Link></li>
+                    <li className={css.link}><Link href="todos">Todos</Link></li>
                 </ul>
             </nav>
         </header>

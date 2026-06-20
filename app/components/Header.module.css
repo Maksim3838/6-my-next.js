@@ -1,24 +1,25 @@
 .header {
-  background-color: #333;
-  padding: 16px 32px;
+  background-color: #5c7d27;
+  padding: 10px 20px;
+ 
 }
 
 .navList {
   display: flex;
-  gap: 24px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+    list-style: none;
+   align-items: center;
+  justify-content: space-around;
+  background-color: #5c7d27;
 }
 
 .link {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 500;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 
 .link:hover {
-  color: #4da6ff;
+  color: #f66904;
 }
