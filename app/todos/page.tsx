@@ -1,5 +1,5 @@
 import{getTodos} from "@/app/services/todos"
-
+import Link  from "next/link"
 
 export default async function Todos() {
     const todos = await getTodos();
@@ -10,7 +10,7 @@ export default async function Todos() {
             <ul style={{paddingInline: "50px", listStyleType: "suare" }}>
                 {todos.map(todo => (
                     <li key={todo.id}>
-                        <p>{todo.title}</p>
+                       <Link href={`/todos/${todo.id}`}>{todo.title}</Link> 
                     </li>
                 ))}
             </ul>

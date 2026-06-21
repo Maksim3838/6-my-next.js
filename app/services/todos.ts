@@ -9,7 +9,7 @@ export async  function getTodos() {
 }
  
 export async function getTodo(todoid:Todo[`id`]) {
-    const {data} = await axios.get<Todo>(`https://jsonplaceholder.typicode.com/${todoid}`);
+    const {data} = await axios.get<Todo>(`https://jsonplaceholder.typicode.com/todos/${todoid}`);
     return data;
 
 }
