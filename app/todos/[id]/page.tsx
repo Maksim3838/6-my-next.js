@@ -1,4 +1,4 @@
-
+import EditButton from "./editbutton";
 import { getTodo } from "@/app/services/todos";
 
 interface TodoProp{
@@ -12,7 +12,8 @@ export default async function Todo({ params }: TodoProp) {
     return (
         <div>
             <h1>{todo.title}</h1>
-            <p>completed:{todo.completed ? "Yes": "No"}</p> 
+            <p>completed:{todo.completed ? "Yes" : "No"}</p> 
+            <EditButton/>
         </div>
         
     )
